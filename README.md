@@ -1,8 +1,8 @@
 Brave Browser Manager for Linux
 
-For people who don't want to rely on third-party installers for Brave Browser.
+A Brave Browser Installer for people who don't want to rely on third-party installers.
 
-Simple script that:
+This is a simple script that:
 
 1: Fetches files from https://github.com/brave/brave-browser/releases
 
@@ -10,4 +10,6 @@ Simple script that:
 
 3: Adds an icon
 
-+ Handles both Installation and Updates
+ Handles both Installation, Updates and Version Information. 
+
+ Enjoy
