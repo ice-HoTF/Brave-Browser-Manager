@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Network;WebBrowser;
+Comment=
+Exec=sh -c "exec /home/$USER/Brave-Browser/brave"
+Icon=/home/ice/Brave-Browser/brave.jpg
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+Name=Brave Browser
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=Brave-browser
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
