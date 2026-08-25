@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Install Dependencies: #
+echo ""
+sudo pacman -S --needed --noconfirm curl
+echo ""
+
 WORK_DIR="/home/$USER/Downloads/Brave"
 DEST_DIR="/home/$USER/Brave-Browser"
 SOURCE_BRAVE="$WORK_DIR/opt/brave.com/brave"
