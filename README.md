@@ -12,4 +12,12 @@ This is a simple script that:
 
  Handles both Installation, Updates and Version Information. 
 
+ Just run the launcher.sh:
+
+1: chmod +x launcher.sh
+2: sh launcher.sh 
+
+You can also add it as an alias and easily run updates like this:
+alias upbrave='/home/$USER/Brave-Browser-Manager-main/launcher.sh'
+
  Enjoy
