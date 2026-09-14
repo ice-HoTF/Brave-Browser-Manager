@@ -15,6 +15,7 @@ This is a simple script that:
  Just run the launcher.sh:
 
 1: chmod +x launcher.sh
+
 2: sh launcher.sh 
 
 You can also add it as an alias and easily run updates like this:
