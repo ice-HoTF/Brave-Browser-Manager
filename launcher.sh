@@ -38,7 +38,7 @@ grep -v symbols | \
 head -1 | \
 xargs -I{} sh -c '
     curl -Lo '"$WORK_DIR"'"/$(basename {})" {}
-    ar x $(basename {}) --output='"$WORK_DIR"'
+    ar x '"$WORK_DIR"'/$(basename {}) --output='"$WORK_DIR"'
     tar -xf '"$WORK_DIR"'/data.tar.* -C '"$WORK_DIR"'
 '
 echo "Copying Files to Destination Directory"
