@@ -8,7 +8,7 @@ echo ""
 WORK_DIR="/home/$USER/Downloads/Brave"
 DEST_DIR="/home/$USER/Brave-Browser"
 SOURCE_BRAVE="$WORK_DIR/opt/brave.com/brave"
-
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 
 #local="1.93.137"
 local=$( [ -x "/home/$USER/Brave-Browser/brave" ] && /home/$USER/Brave-Browser/brave --version 2>/dev/null | awk '{print $3}' | cut -d'.' -f2- || echo "NOT_INSTALLED" )
@@ -54,7 +54,8 @@ rm -rf /home/$USER/Downloads/Brave
 echo "Done"
 echo ""
 echo "Copying ICON to /home/$USER/Brave-Browser/"
-cp brave.jpg /home/$USER/Brave-Browser/
+cp "$SCRIPT_DIR/brave.jpg" /home/$USER/Brave-Browser/
+#cp brave.jpg /home/$USER/Brave-Browser/
 echo "Done"
 echo ""
 echo "Creating Desktop File: /home/$USER/.local/share/applications/brave.desktop/"
