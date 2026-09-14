@@ -37,7 +37,7 @@ grep -oP '"browser_download_url":\s*"\K[^"]*_amd64\.deb' | \
 grep -v symbols | \
 head -1 | \
 xargs -I{} sh -c '
-    curl -LO {}
+    curl -Lo '"$WORK_DIR"'"/$(basename {})" {}
     ar x $(basename {}) --output='"$WORK_DIR"'
     tar -xf '"$WORK_DIR"'/data.tar.* -C '"$WORK_DIR"'
 '
