@@ -62,7 +62,7 @@ echo "Creating Desktop File: /home/$USER/.local/share/applications/brave.desktop
 [Desktop Entry]
 Categories=Network;WebBrowser;
 Comment=
-Exec=sh -c "exec /home/$USER/Brave-Browser/brave"
+Exec=sh -c "exec /home/$USER/Brave-Browser/brave %U"
 Icon=/home/$USER/Brave-Browser/brave.jpg
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
 Name=Brave Browser
@@ -81,7 +81,7 @@ EOF
 echo "Done"
 echo ""
 echo "Copying Desktop File"
-cp brave.desktop /home/$USER/.local/share/applications/
+#cp brave.desktop /home/$USER/.local/share/applications/
 sed -i "s|\$USER|$USER|g" /home/$USER/.local/share/applications/brave.desktop
 else
     echo ""
